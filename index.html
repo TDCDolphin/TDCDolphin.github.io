@@ -16,6 +16,10 @@ h1 {
 	text-shadow: 0px 0px 7px rgb(0,255,0);}
 h2 {
 	text-shadow: 0px 0px 6px rgb(0,255,0);}
+h3 {
+	text-shadow: 0px 0px 5px rgb(0,255,0);}
+p {
+	text-shadow: 0px 0px 5px rgb(0,255,0);}
 
 #header {
 	text-align: center;
@@ -26,7 +30,8 @@ h2 {
 	position: fixed;
     line-height: 0;
     height: 50px;
-    background: black;}   
+    background: black;
+    z-index: 100;}   
 #header-text {
     display: inline-block;
     padding-top: 6px;
@@ -39,10 +44,11 @@ h2 {
     
 #content {
     position: absolute;
-    width: calc(100% - 20px);
+    width: calc(100% - 240px);
     height: calc(100% - 77px);
     top: 52px;
-    margin: 10px;}
+    margin: 10px;
+    left: 220px;}
 
 #links {
 	width: 200px;
@@ -52,7 +58,8 @@ h2 {
     top: 57px;
     padding-left: 10px;
     padding-right: 10px;
-    background: black;}
+    background: black;
+    z-index: 100;}
 #download-links {
 	float:left;
     width: 200px;
@@ -65,6 +72,13 @@ h2 {
 	text-align: center;
     margin-bottom: 0px;}
     
+.steps {
+	with="calc(100% - 340px)"}
+.step-title {
+	text-align: center;}
+.step-p {
+	text-align: center;}
+    
 </style>
 </head>
 <body>
@@ -76,24 +90,29 @@ h2 {
 <div id="links">
 	<div id="download-links">
 		<h2 class="links-header">Download Links:</h2>
-		<a href="https://www.7-zip.org/">7-Zip</a><br>
-		<a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Visual Studio 2019</a><br>
-		<a href="https://dolphin-emu.org/download/">Dolphin Emulator</a><br>
-		<a href="http://wiibrew.org/wiki/NUS_Downloader">NUS Downloader</a><br>
-		<a href="https://github.com/RiiConnect24/.VFF-File-Downloader-for-Dolphin/releases">RiiConnect24 VFF</a><br>
-		<a href="https://github.com/RiiConnect24/RiiConnect24-Patcher/releases">RiiConnect24 Patcher</a><br>
-		<a href="https://zadig.akeo.ie/">Zadig</a>
+		<a target="about:blank" href="https://www.7-zip.org/">7-Zip</a><br>
+		<a target="about:blank" href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Visual Studio 2019</a><br>
+		<a target="about:blank" href="https://dolphin-emu.org/download/">Dolphin Emulator</a><br>
+		<a target="about:blank" href="http://wiibrew.org/wiki/NUS_Downloader">NUS Downloader</a><br>
+		<a target="about:blank" href="https://github.com/RiiConnect24/.VFF-File-Downloader-for-Dolphin/releases">RiiConnect24 VFF</a><br>
+		<a target="about:blank" href="https://github.com/RiiConnect24/RiiConnect24-Patcher/releases">RiiConnect24 Patcher</a><br>
+		<a target="about:blank" href="https://zadig.akeo.ie/">Zadig</a>
 	</div>
 	<div id="other-links">
 		<h2 class="links-header">Other Links:</h2>
-		<a href="https://archive.org/download/WII-WAD-NES">NES Virtual Console</a><br>
-		<a href="https://archive.org/download/WII-WAD-SNES">SNES Virtual Console</a><br>
-		<a href="https://archive.org/download/WII-WAD-N64">N64 Virtual Console</a><br>
-		<a href="https://archive.org/download/WiiWareCollectionByGhostware">WiiWare</a>
+		<a target="about:blank" href="https://archive.org/download/WII-WAD-NES">NES Virtual Console</a><br>
+		<a target="about:blank" href="https://archive.org/download/WII-WAD-SNES">SNES Virtual Console</a><br>
+		<a target="about:blank" href="https://archive.org/download/WII-WAD-N64">N64 Virtual Console</a><br>
+		<a target="about:blank" href="https://archive.org/download/WiiWareCollectionByGhostware">WiiWare</a>
 	</div>
 </div>
 
 <div id="content">
+
+<div class="steps">
+<h2 class="step-title">Step 1: Install 7-Zip</h3>
+<p class="step-p">First, we need to download 7-Zip, because it is required to uncompress the Dolphin installation. Click the 7-Zip link found on the left. Once you reach the webpage, install the corresponding version for you device, specifically, I would recommend dowloading the ones on the top, and not alpha releases. Once the download is complete, open the file, and click through the responses.</p>
+</div>
 
 </div>
 
