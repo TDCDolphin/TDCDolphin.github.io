@@ -1,25 +1,43 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>Page Title</title>
 <style>
-body {background: black;
+body {
+	background: black;
 	margin: 0px;}
 
-#header {color: rgb(0,255,0);
+#header {
+	color: rgb(0,255,0);
 	text-align: center;
-    border: 3px solid rgb(0,255,0);
-    width: calc(100% - 6px);
-    position: fixed;
-    padding: 0px;}
+    border-top: 4px solid rgb(0,255,0);
+    border-right: 3px solid rgb(0,255,0);
+    border-bottom: 3px solid rgb(0,255,0);
+    width: calc(100% - 3px);
+	position: absolute;
+    line-height: 0;
+    height: 50px;}
     
-#header-text {text-shadow: 0px 0px 7px rgb(0,255,0);}
+#header-text {
+	text-shadow: 0px 0px 7px rgb(0,255,0);
+    display: inline-block;
+    padding-top: 8px;
+	position: relative;}
+
+#logo {
+	width: 50px;
+    float:left;
+    border-left: 3px solid rgb(0,255,0);
+    border-right: 3px solid rgb(0,255,0);}
     
 </style>
 </head>
 <body>
 <div id="header">
+<img id="logo" src="https://tdcdolphin.github.io/TDCDolphin.png">
 <h1 id="header-text">TheDarkCoder Dolphin</h1>
 </div>
+
 </body>
 </html>
