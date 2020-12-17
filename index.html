@@ -7,6 +7,7 @@
 body {
 	background: black;
 	margin: 0px;
+    height: 1000px;
     color: rgb(0,255,0);}
 a {
 	color: rgb(0,255,255);
@@ -22,7 +23,7 @@ h2 {
     border-right: 3px solid rgb(0,255,0);
     border-bottom: 3px solid rgb(0,255,0);
     width: calc(100% - 3px);
-	position: absolute;
+	position: fixed;
     line-height: 0;
     height: 50px;}   
 #header-text {
@@ -43,31 +44,56 @@ h2 {
     margin: 10px;}
 
 #links {
+	width: 200px;
+    height: calc(100% - 5px);
+	border-right: 3px solid rgb(0,255,0);
+    position: fixed;
+    top: 57px;
+    left: 10px;}
+#download-links {
 	float:left;
+    width: 200px;
+    margin-bottom: 15px;
+    margin-top: -10px;}
+#other-links {
+	float:top-left;
     width: 200px;}
-#links-header {
+.links-header {
 	text-align: center;
-    line-height: 0px;}
+    margin-bottom: 0px;}
     
 </style>
 </head>
 <body>
 <div id="header">
-<img id="logo" src="https://tdcdolphin.github.io/TDCDolphin.png">
-<h1 id="header-text">TheDarkCoder Dolphin Guide</h1>
+	<img id="logo" src="https://tdcdolphin.github.io/TDCDolphin.png">
+	<h1 id="header-text">TheDarkCoder's Dolphin Guide</h1>
 </div>
+
 <div id="content">
 
+</div>
 <div id="links">
-<h2 id="links-header">Download Links:</h2>
-<a href="https://www.7-zip.org/">7-Zip</a><br>
-<a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Visual Studio 2019</a><br>
-<a href="https://dolphin-emu.org/download/">Dolphin Emulator</a><br>
-<a href="http://wiibrew.org/wiki/NUS_Downloader">NUS Downloader</a><br>
-<a href="https://github.com/RiiConnect24/.VFF-File-Downloader-for-Dolphin/releases">RiiConnect24</a><br>
-<a href="https://zadig.akeo.ie/">Zadig</a>
+	<div id="download-links">
+		<h2 class="links-header">Download Links:</h2>
+		<a href="https://www.7-zip.org/">7-Zip</a><br>
+		<a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Visual Studio 2019</a><br>
+		<a href="https://dolphin-emu.org/download/">Dolphin Emulator</a><br>
+		<a href="http://wiibrew.org/wiki/NUS_Downloader">NUS Downloader</a><br>
+		<a href="https://github.com/RiiConnect24/.VFF-File-Downloader-for-Dolphin/releases">RiiConnect24 VFF</a><br>
+		<a href="https://github.com/RiiConnect24/RiiConnect24-Patcher/releases">RiiConnect24 Patcher</a><br>
+		<a href="https://zadig.akeo.ie/">Zadig</a>
+	</div>
+
+	<div id="other-links">
+		<h2 class="links-header">Other Links:</h2>
+		<a href="https://archive.org/download/WII-WAD-NES">NES Virtual Console</a><br>
+		<a href="https://archive.org/download/WII-WAD-SNES">SNES Virtual Console</a><br>
+		<a href="https://archive.org/download/WII-WAD-N64">N64 Virtual Console</a><br>
+		<a href="https://archive.org/download/WiiWareCollectionByGhostware">WiiWare</a>
+	</div>
 </div>
 
-</div>
+
 </body>
 </html>
