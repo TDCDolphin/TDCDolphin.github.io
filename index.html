@@ -2,14 +2,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>TDCDolphin</title>
 <style>
 body {
 	background: black;
-	margin: 0px;}
+	margin: 0px;
+    color: rgb(0,255,0);}
+a {
+	color: rgb(0,255,255);
+    text-shadow: 0px 0px 3px rgb(0,255,255);}
+h1 {
+	text-shadow: 0px 0px 7px rgb(0,255,0);}
+h2 {
+	text-shadow: 0px 0px 6px rgb(0,255,0);}
 
 #header {
-	color: rgb(0,255,0);
 	text-align: center;
     border-top: 4px solid rgb(0,255,0);
     border-right: 3px solid rgb(0,255,0);
@@ -17,27 +24,49 @@ body {
     width: calc(100% - 3px);
 	position: absolute;
     line-height: 0;
-    height: 50px;}
-    
+    height: 50px;}   
 #header-text {
-	text-shadow: 0px 0px 7px rgb(0,255,0);
     display: inline-block;
     padding-top: 8px;
 	position: relative;}
-
 #logo {
 	width: 50px;
     float:left;
     border-left: 3px solid rgb(0,255,0);
     border-right: 3px solid rgb(0,255,0);}
     
+#content {
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 57px);
+    top: 32px;
+    margin: 10px;}
+
+#links {
+	float:left;
+    width: 200px;}
+#links-header {
+	text-align: center;}
+    
 </style>
 </head>
 <body>
 <div id="header">
 <img id="logo" src="https://tdcdolphin.github.io/TDCDolphin.png">
-<h1 id="header-text">TheDarkCoder Dolphin</h1>
+<h1 id="header-text">TheDarkCoder Dolphin Guide</h1>
+</div>
+<div id="content">
+
+<div id="links">
+<h2 id="links-header">Download Links:</h2>
+<a href="https://www.7-zip.org/">7-Zip</a><br>
+<a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Visual Studio 2019</a><br>
+<a href="https://dolphin-emu.org/">Dolphin Emulator</a><br>
+<a href="http://wiibrew.org/wiki/NUS_Downloader">NUS Downloader</a><br>
+<a href="https://rc24.xyz/">RiiConnect24</a><br>
+<a href="https://zadig.akeo.ie/">Zadig</a>
 </div>
 
+</div>
 </body>
 </html>
